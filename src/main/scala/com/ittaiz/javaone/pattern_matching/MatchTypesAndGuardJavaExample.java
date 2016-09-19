@@ -12,7 +12,7 @@ public class MatchTypesAndGuardJavaExample {
     }
 
     private static void takeCareOfPets(Animal... pets) {
-        stream(pets).forEach((pet) -> takeCareOfPet(pet));
+        stream(pets).forEach(MatchTypesAndGuardJavaExample::takeCareOfPet);
     }
 
     private static void takeCareOfPet(Animal pet) {
