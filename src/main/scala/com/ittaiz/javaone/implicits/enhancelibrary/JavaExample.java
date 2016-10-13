@@ -3,12 +3,12 @@ package com.ittaiz.javaone.implicits.enhancelibrary;
 public class JavaExample {
 
     public static void main(String[] args) {
-        SomeThirdPartyCode thirdPartyCode = new SomeThirdPartyCode(5);
-        SomeThirdPartyCode otherThirdPartyCode = new SomeThirdPartyCode(7);
-        System.out.println(accumulate(thirdPartyCode, otherThirdPartyCode));
+        SpringFWCode springFWInstance = new SpringFWCode(5);
+        SpringFWCode otherSpringFWInstance = new SpringFWCode(7);
+        System.out.println(accumulate(springFWInstance, otherSpringFWInstance));
     }
 
-    private static SomeThirdPartyCode accumulate(SomeThirdPartyCode a, SomeThirdPartyCode b) {
-        return new SomeThirdPartyCode(a.sum() + b.sum());
+    private static SpringFWCode accumulate(SpringFWCode a, SpringFWCode b) {
+        return new SpringFWCode(a.sum() + b.sum());
     }
 }
